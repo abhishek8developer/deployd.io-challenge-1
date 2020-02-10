@@ -41,4 +41,14 @@
       z-index: 11;
     }
   }
+  @media screen and (max-width: 540px) {
+    padding: 15px;
+    .search {
+      max-width: 200px;
+      width: 50%;
+      input {
+        width: 100%;
+      }
+    }
+  }
 }

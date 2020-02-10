@@ -10,10 +10,7 @@ const App = () => {
     <AppStore.Provider
       value={{
         store,
-        updateStore: (action: any) => {
-          console.log(store, action)
-          setStore(reducer(action, store))
-        }
+        updateStore: (action: any) => setStore(reducer(action, store))
       }}
     >
       <div className="app">
