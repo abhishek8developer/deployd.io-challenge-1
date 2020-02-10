@@ -1,0 +1,44 @@
+@import './abstracts/variable';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 35px;
+  z-index: 0;
+  box-shadow: 0 -1px 7px 0 $grey-1;
+  .brand {
+    label {
+      color: rgb(0, 0, 181);
+      font-size: 22px;
+    }
+    span {
+      color: #2e94fb;
+      font-size: 18px;
+    }
+  }
+  .search {
+    border: 1px solid $grey-1;
+    padding: 1px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    input {
+      position: relative;
+      border-radius: 20px;
+      padding: 10px 15px 8px;
+      border: none;
+      outline: none;
+      z-index: 10;
+    }
+    svg {
+      position: relative;
+      color: $grey-1;
+      margin-left: 15px;
+      margin-right: -10px;
+      margin-top: 2px;
+      z-index: 11;
+    }
+  }
+}

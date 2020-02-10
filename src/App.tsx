@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import Header from './components/header'
+import { User } from './modules'
+import { AppStore, reducer } from './store'
 
 const App = () => {
+  const [store, setStore] = React.useState<any>(() => reducer())
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppStore.Provider
+      value={{
+        store,
+        updateStore: (action: any) => {
+          console.log(store, action)
+          setStore(reducer(action, store))
+        }
+      }}
+    >
+      <div className="app">
+        <Header />
+        <div className="content-body">
+          <User />
+        </div>
+      </div>
+    </AppStore.Provider>
+  )
 }
 
-export default App;
+export default App
