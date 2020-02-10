@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Deployd.io Challenge 1
+This is challenge exercise.
+## Task
+1. Create a project in Github.
+2. Use any framework to create the following UI. The functionalities are the user should be able to create and update users.
+3. Think about responsiveness while designing this. 
+4. If the username and password are correct and the login button is clicked, Show a label below informing login successfully.
+5. If create a user is clicked after entering username and password then show user-created successfully.
+6. We should be able to use the same username and password to login.
+7. Use only a browser to serve all the functionality. No, BE required.
+8. The search user functionality should be a typeahead. The results should be displayed dynamically in the list below.
+9. Explain contracts that you will use in case of a backend. (REST) (Commit a swagger document if possible.)
 
-## Available Scripts
+NOTE: Styling is not required as much. Layout is important
 
-In the project directory, you can run:
+### Installation
 
-### `yarn start`
+Exercise is setup on following versions
+* [Node.js](https://nodejs.org/) v10+
+* [yarn](https://yarnpkg.com/) v1.2
+* [npm]() v6.4.1
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Install the dependencies and devDependencies and start the server.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```sh
+$ git clone https://github.com/abhishek8developer/deployd.io-challenge-1.git
+$ cd deployd.io-challenge-1
+$ yarn or npm i
+$ yarn start or npm start
+```
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
 
-### `yarn build`
+### Tech
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Exercise setup uses following:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+* [ReactJS]() - v16.12 latest!
+* [node-sass]() - scss compiler for styling.
+* [Typescript]() - v3.7.2 for intellisense.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+For production environments...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+$ yarn build
+```
+It is an optimized build for faster UI.
