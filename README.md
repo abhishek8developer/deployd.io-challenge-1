@@ -33,8 +33,6 @@ $ yarn or npm i
 $ yarn start or npm start
 ```
 
-This text you see here is _actually_ written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
-
 ### Tech
 
 Exercise setup uses following:
